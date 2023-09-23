@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply text-white text-base tracking-[0.3px] font-bold border-b-4 border-b-cyan pb-[2px]  hover:text-cyan duration-300;
+  }
+
+  .button {
+    @apply mt-[36px] text-[19px] tracking-[-0.7px] font-bold bg-cyan border-2 border-cyan text-dark-purple
+    px-[28px] py-[15px] hover:bg-dark-purple hover:text-cyan duration-300;
+  }
+}

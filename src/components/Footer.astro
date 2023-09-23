@@ -1,0 +1,37 @@
+---
+const SOCIALS = [
+  {
+    alt: "facebook icon",
+    src: "/assets/images/icon-facebook.svg",
+  },
+  {
+    alt: "twitter icon",
+    src: "/assets/images/icon-twitter.svg",
+  },
+  {
+    alt: "instagram icon",
+    src: "/assets/images/icon-instagram.svg",
+  },
+];
+---
+
+<footer
+  class="container flex flex-col items-center mt-[223px] gap-[57px] mb-10"
+>
+  <a href="#">
+    <img src="/assets/images/logo-dark.svg" alt="workit logo" />
+  </a>
+  <ul class="flex items-center gap-[29px]">
+    {
+      SOCIALS.map((social) => {
+        return (
+          <li>
+            <a href="#">
+              <img src={social.src} alt={social.alt} />
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
+</footer>
